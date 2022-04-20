@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Chaitnya_Grid::manager" title="Grid Manager" module="Chaitnya_Grid" sortOrder="10" resource="Chaitnya_Grid::manager"/>
+    	<add id="Chaitnya_Grid::add_row" title="Grid Manager" module="Chaitnya_Grid" sortOrder="20" parent="Chaitnya_Grid::manager" action="grid/grid" resource="Chaitnya_Grid::add_row"/>
+    </menu>
+</config>
