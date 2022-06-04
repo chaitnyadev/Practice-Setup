@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="rh" translate="label" sortOrder="10">
+            <label>Dynamic Promo Messages</label>
+        </tab>
+        <section id="dynamicpromomessage" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Dynamic Promo Messages</label>
+            <tab>iksula</tab>
+            <resource>Iksula_DynamicPromotion::config</resource>
+            <group id="promo1" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Promo Message 1</label>
+                <field id="dynamic_messagename1" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dynamic Promo 1</label>
+                </field>
+                <field id="buy_x_get_x_promo" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dynamic Promo Message 1</label>
+                </field>
+            </group>
+            <group id="promo2" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Promo Message 2</label>
+                <field id="dynamic_messagename2" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dynamic Promo 2</label>
+                </field>
+                <field id="buy_x_get_x_promo12" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dynamic Promo Message 1</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Iksula_DynamicPromotion::manager" title="Dynamic Promo Pdl" module="Iksula_DynamicPromotion" sortOrder="10" resource="Iksula_DynamicPromotion::manager"/>
+    	<add id="Iksula_DynamicPromotion::add_row" title="Dynamic Promo Pdl" module="Iksula_DynamicPromotion" sortOrder="20" parent="Iksula_DynamicPromotion::manager" action="iksula_dynamicpromotion/dynamicpromotion" resource="Iksula_DynamicPromotion::add_row"/>
+    </menu>
+</config>
