@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="dynamic_promo_pdl" resource="default" engine="innodb" comment="Dynamic Promo Pdl">
+		<column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="Id"/>
+                <column xsi:type="int" name="promotion_id" nullable="false" comment="Promotion Id"/>
+                <column xsi:type="int" name="deal_id" nullable="false" comment="Deal Id"/>
+                <column xsi:type="text" name="promo_type" nullable="false" comment="Promo Type"/>
+                <column xsi:type="text" name="source" nullable="false" comment="Source"/>
+                <column xsi:type="int" name="source_items" nullable="false" comment="Source Items"/>
+                <column xsi:type="int" name="src_qty" nullable="false" comment="Src Qty"/>
+                <column xsi:type="text" name="target" nullable="false" comment="Target"/>
+                <column xsi:type="text" name="target_items" nullable="false" comment="Target Items"/>
+                <column xsi:type="int" name="tgt_qty" nullable="false" comment="Tgt Qty"/>
+                <column xsi:type="text" name="currency" nullable="false" comment="Currency"/>
+                <column xsi:type="text" name="amount_off" nullable="false" comment="Amount Off"/>
+                <column xsi:type="text" name="percent_off" nullable="false" comment="Percent Off"/>
+                <column xsi:type="int" name="actual_price" nullable="false" comment="Actual Price"/>
+                <column xsi:type="int" name="reduced_price" nullable="false" comment="Reduced Price"/>
+                <column xsi:type="text" name="start_date" nullable="false" comment="Start Date"/>
+                <column xsi:type="text" name="end_date" nullable="false" comment="end_date"/>
+		<!-- <column xsi:type="datetime" name="start_date" on_update="false" nullable="false"  comment="Start Date"/>
+		<column xsi:type="datetime" name="end_date" on_update="true" nullable="false"  comment="End Date"/> -->
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="id"/>
+		</constraint>
+	</table>
+</schema>
+
+      
